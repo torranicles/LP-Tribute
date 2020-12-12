@@ -1,0 +1,209 @@
+/* codes below are for title/header */
+body {
+    margin:0px; 
+    background-color: rgba(64,64,64,.1);
+}
+
+.headContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+        
+.logo {
+    height:auto;
+    width:15%;
+    padding-right:30px;
+} 
+
+#image { 
+    height:auto;
+    width: 90%;
+    border-radius:1rem;
+}
+
+#img-div {
+    margin: 5% auto;
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 2px white;
+    border-radius:1rem;
+    text-align: center;
+}
+
+#img-caption {
+    color:rgb(58, 57, 57);
+    font-style: italic;
+    font-family:'Times New Roman', sans-serif;
+    font-weight: bold;
+    font-size:16px;
+    padding:20px;
+}
+/* codes above are for title/header */
+
+/* codes below are for content */
+.content {
+    font-family: 'Archivo', sans-serif;
+    font-size:16px;
+    text-align:justify;
+    max-width: 600px;
+    margin: 70px auto;
+    line-height:150%;
+}
+        
+#tribute-info {
+    font-family: 'Noto Sans JP' , sans-serif;
+    text-align: center; 
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+ul {
+    list-style: none;
+    margin: 0px 40px 0px 10px;
+}
+/* codes above are for content */
+
+/* codes below are for album */
+.albums {
+    font-family: 'Archivo', cursive; 
+    margin-top:100px;
+}
+
+.albumCon {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:100%;
+    min-height:900px;
+    height:auto;
+    background-color:rgb(177, 177, 177);
+    border-bottom: 8px solid white;
+    padding:100px 0px;
+}
+        
+.albumHead {
+    float: right;
+    font-size:100px;
+    max-width:25%;
+    height:auto;
+    padding:20px 50% 20px 5%;
+    background-color:rgba(15, 15, 15, 0.9);
+    color:white;
+    border-radius:1.25rem 0px 0px 1.25rem;
+}
+
+.thumbnail {
+    width:250px;
+    height:310px;
+    box-shadow: -2px 3px 3px black;
+    color:white;
+    background-color: rgb(21, 26, 51);
+    margin: 2%;
+}
+
+.caption {
+    text-align:center;
+    font-size: 22px;
+    padding:15px;
+}
+        
+.hoverMe {
+    position:relative;
+}
+        
+.hoverPhoto {
+    width: 100%;
+    height:250px;
+    z-index:1;
+}
+
+.hoverMe:hover .hoverPhoto{
+    opacity:.3;
+}
+
+.hoverText {
+    display:none;
+    font-size:20px;
+    color: white;
+    text-align: center;
+    position:absolute;
+    left:30%;
+    bottom:50%;
+    z-index:1;
+}
+
+.hoverMe:hover .hoverText{
+    display:block;
+}
+        
+/* codes above are for album */
+
+/* codes for footer */
+#tribute-link {
+    color:white;
+    font-family: 'Archivo', sans-serif;
+    font-size:16px;
+    padding:15px;
+}
+
+.foot {
+    background-color: black;
+    height:20px;
+    text-align: center;
+    margin: 0%;
+    padding:15px;
+}
+/* codes for footer */
+a {
+    text-decoration-line: none;
+}
+            
+a:visited {
+    color:darkcyan
+}
+
+@media only screen and (max-width:768px) {
+    .logo {
+        width:20vw;
+        padding:0px;
+    }
+            
+    .headContainer {
+        flex-direction: column;
+        font-size: 6vw;
+    }
+
+    .albumHead {
+        font-size: 7vw;
+    }
+
+    #tribute-info {
+        padding: 30px 0px;
+        margin:5%;
+        line-height:125%;}
+            
+    .thumbnail {
+        width: 150px;
+        height: 210px;
+    }
+
+    .hoverPhoto {
+        width: 100%;
+        height:150px;
+        z-index:1;
+    }
+
+    .caption {
+        font-size: 16px;
+    }
+
+}
